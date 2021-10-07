@@ -1,0 +1,134 @@
+.container-fluid {
+  padding: 0%;
+}
+.navbar-brand {
+  font-size: 2.4rem;
+  font-family: eds-market-bold, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.navbar-light .navbar-brand {
+  color: #b73e3e;
+}
+a.nav-link {
+  font-family: puffin-display-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
+  max-width: 960px;
+  font-size: 17px;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#splahsbillede {
+  background-color: #ff8eed;
+}
+.bg-light {
+  --bs-bg-opacity: 0.2;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  height: 100px;
+}
+#produktbeskrivelse {
+  background-color: #acf8fb;
+}
+#opskrifter {
+  background-color: #2a2daf;
+  height: 300px;
+}
+#opskrifter p {
+  color: white;
+}
+
+#favoritter {
+  background-color: #ff8eed;
+}
+#favoritter h3 {
+  color: white;
+}
+#favoritter p {
+  color: #2a2daf;
+}
+#Godegrunde {
+  background-color: #acf8fb82;
+}
+#Godegrunde .img-fluid {
+  height: 130px;
+}
+
+/*overskrifter + tekst*/
+h1 {
+  font-size: 2rem;
+  font-family: eds-market-bold, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  margin-top: 1rem;
+}
+h2 {
+  font-family: eds-market-regular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #b73e3e;
+}
+h3 {
+  font-family: eds-market-regular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #2a2daf;
+}
+h4 {
+  font-family: eds-market-regular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #2a2daf;
+}
+p {
+  font-family: puffin-display-soft, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  /* max-width: 500px; */
+  color: black;
+}
+.row {
+  --bs-gutter-x: 0;
+}
+/*knapper*/
+.btn-warning {
+  background-color: #b73e3e;
+  border-radius: 30px;
+  background: var(--link-color);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #2a2daf;
+  border: none;
+  cursor: pointer;
+  font-family: eds-market-regular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  border-radius: 40px;
+  background-color: #acf8fb;
+  width: 182px;
+  height: 40px;
+  box-shadow: 0 6px 10px rgb(0 0 0 / 0.2);
+}
+
+.btn-warning:hover {
+  color: white;
+  background-color: #2a2daf;
+}
+
+#splahsbillede div {
+  align-items: center;
+}
+#splahsbillede div * {
+  grid-area: 1 / 1 / -1 / -1;
+}
