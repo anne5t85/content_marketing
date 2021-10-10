@@ -1,45 +1,40 @@
 .container-fluid {
   padding: 0%;
 }
-.navbar-brand {
-  font-size: 2.4rem;
-  font-family: eds-market-bold, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-.navbar-light .navbar-brand {
-  color: #b73e3e;
-}
-a.nav-link {
-  font-family: puffin-display-soft, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 1.5;
-  max-width: 960px;
-  font-size: 17px;
-}
-.navbar-nav {
-  margin-left: auto;
-  margin-right: auto;
+nav .container-fluid {
+  background-color: #ff8eed;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-family: eds-market-regular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+}
 #splahsbillede {
   background-color: #ff8eed;
 }
-.bg-light {
+/* .bg-light {
   --bs-bg-opacity: 0.2;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
   height: 100px;
-}
+} */
 #produktbeskrivelse {
   background-color: #acf8fb;
 }
+#produktbeskrivelse .skrift {
+  max-width: 470px;
+  margin: auto;
+}
 #opskrifter {
   background-color: #2a2daf;
-  height: 300px;
 }
+
 #opskrifter p {
   color: white;
+  max-width: 900px;
+  margin: auto;
 }
 
 #favoritter {
@@ -48,14 +43,19 @@ a.nav-link {
 #favoritter h3 {
   color: white;
 }
-#favoritter p {
-  color: #2a2daf;
+#favoritter h2 {
+  color: #b73e3e;
 }
 #Godegrunde {
   background-color: #acf8fb82;
 }
 #Godegrunde .img-fluid {
   height: 130px;
+  opacity: 70%;
+}
+#Godegrunde h3 {
+  font-family: eds-market-bold, sans-serif;
+  color: #ff8de8;
 }
 
 /*overskrifter + tekst*/
@@ -64,21 +64,21 @@ h1 {
   font-family: eds-market-bold, sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: white;
+  color: #b73e3e;
   margin-top: 1rem;
 }
 h2 {
-  font-family: eds-market-regular, sans-serif;
+  font-family: eds-market-bold, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
-  color: #b73e3e;
+  font-size: 1.8rem;
+  color: #f4ad24;
 }
 h3 {
   font-family: eds-market-regular, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #2a2daf;
 }
 h4 {
@@ -86,7 +86,7 @@ h4 {
   font-weight: 400;
   font-style: normal;
   font-size: 0.9rem;
-  color: #2a2daf;
+  color: #454341;
 }
 p {
   font-family: puffin-display-soft, sans-serif;
@@ -94,20 +94,18 @@ p {
   font-style: normal;
   line-height: 1.5;
   /* max-width: 500px; */
-  color: black;
+  color: #454341;
 }
 .row {
   --bs-gutter-x: 0;
 }
 /*knapper*/
 .btn-warning {
-  background-color: #b73e3e;
   border-radius: 30px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
-  color: #2a2daf;
   border: none;
   cursor: pointer;
   font-family: eds-market-regular, sans-serif;
@@ -115,20 +113,63 @@ p {
   font-style: normal;
   font-size: 1rem;
   border-radius: 40px;
-  background-color: #acf8fb;
   width: 182px;
   height: 40px;
   box-shadow: 0 6px 10px rgb(0 0 0 / 0.2);
+  transition: transform 0.2s;
 }
 
 .btn-warning:hover {
   color: white;
-  background-color: #2a2daf;
+  transform: scale(1.1);
 }
-
-#splahsbillede div {
-  align-items: center;
+#favoritter button {
+  background-color: #b73e3e;
+  color: white;
+  width: 115px;
+  border-radius: 22px;
 }
-#splahsbillede div * {
+#favoritter .beskrivelse {
+  color: white;
+  max-width: 900px;
+  margin: auto;
+}
+/* #splahsbillede .overskrifter {
+  place-items: top;
+}
+#splahsbillede .overskrifter * {
   grid-area: 1 / 1 / -1 / -1;
+} */
+#splahsbillede button {
+  background-color: #b73e3e;
+  color: white;
+}
+#opskrifter .tekst_på_billede {
+  align-items: end;
+}
+#opskrifter .tekst_på_billede * {
+  grid-area: 1 / 1 / -1 / -1;
+}
+.tekst_på_billede {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.tekst_på_billede:hover {
+  transform: scale(1.1);
+}
+#opskrifter h3 {
+  background-color: #acf8fbc2;
+  height: 80px;
+}
+#opskrifter button {
+  color: white;
+  background-color: #f4ad24;
+}
+#produktbeskrivelse button {
+  color: white;
+  background-color: #f4ad24;
+}
+#footer {
+  background-color: #ff8eeca2;
+  height: 200px;
 }
