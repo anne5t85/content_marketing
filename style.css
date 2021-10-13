@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .container-fluid {
   padding: 0%;
 }
@@ -12,6 +15,17 @@ nav .container-fluid {
   font-style: normal;
   font-size: 1.3rem;
 }
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #b73e3e;
+}
+/*burgermenu*/
+.navbar-light .navbar-toggler {
+  border: none;
+  color: #b73e3e;
+}
+.navbar-toggler {
+  margin-right: 20px;
+}
 #splahsbillede {
   background-color: #ff8eed;
 }
@@ -23,7 +37,7 @@ nav .container-fluid {
 #produktbeskrivelse {
   background-color: #acf8fb;
 }
-#produktbeskrivelse .skrift {
+#produktbeskrivelse .cols-2 .skrift {
   max-width: 470px;
   margin: auto;
 }
@@ -55,12 +69,13 @@ nav .container-fluid {
 }
 #Godegrunde h3 {
   font-family: eds-market-bold, sans-serif;
-  color: #ff8de8;
+  color: #2a2daf;
+  opacity: 70%;
 }
 
 /*overskrifter + tekst*/
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: eds-market-bold, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -144,6 +159,14 @@ p {
   background-color: #b73e3e;
   color: white;
 }
+#splahsbillede h2 {
+  color: #b73e3e;
+  font-size: 1.2rem;
+}
+#splahsbillede h3 {
+  color: white;
+  font-size: 1rem;
+}
 #opskrifter .tekst_på_billede {
   align-items: end;
 }
@@ -171,5 +194,71 @@ p {
 }
 #footer {
   background-color: #ff8eeca2;
-  height: 200px;
+}
+.scale-up-right {
+  animation: scale-up-right 1.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-right {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 100% 50%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+  #splahsbillede h2 {
+    font-size: 2.2rem;
+  }
+  #splahsbillede h3 {
+    font-size: 1.7rem;
+  }
+  #splahsbillede {
+    max-height: 450px;
+  }
+  #splahsbillede .overskrifter {
+    padding-left: 20px;
+  }
+}
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #ffc371;
+}
+
+/* .form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+} */
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+.lillebeskrivelse {
+  margin-right: 50px;
+}
+.list-inline img {
+  height: 30px;
+}
+
+footer p {
+  font-family: puffin-display-soft, sans-serif;
+  color: white;
+}
+
+footer h6 {
+  font-family: eds-market-regular, sans-serif;
+  color: #b73e3e;
+}
+.send img {
+  height: 30px;
 }
